@@ -1,0 +1,127 @@
+ /*Google font*/
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+ /* Global Style */
+ 
+ body {
+     margin: 0;
+     font-size: 16px;
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+ }
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     outline: none;
+ }
+ 
+ a {
+     text-decoration: none!important;
+ }
+ 
+ .mybtn1 {
+     background-color: #ffffff;
+     font-size: 16px;
+     font-weight: 600;
+     text-transform: uppercase;
+     border-radius: 50px;
+     padding: 12px 36px;
+     border: none;
+     cursor: pointer;
+     position: relative;
+     overflow: hidden;
+     transition-property: background, color;
+     transition-duration: 0.3s;
+     transition-timing-function: linear;
+ }
+ 
+ .mybtn1:focus {
+     box-shadow: none;
+ }
+ 
+ .mybtn1:hover {
+     background: rgba(223, 219, 219, 0.664);
+     color: white;
+ }
+ /* Header section */
+ 
+ .header {
+     border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+ }
+ 
+ .header .navbar.navbar-light .navbar-brand img {
+     width: 50%;
+ }
+ 
+ .header .navbar #collapsibleNavbar .nav-item .nav-link {
+     color: #ffffff;
+     text-transform: capitalize;
+     font-weight: 600;
+     padding: 20px 15px 20px;
+     line-height: 26px;
+     opacity: 0.6;
+ }
+ 
+ .header .navbar #collapsibleNavbar .nav-item .nav-link.active {
+     opacity: 1;
+ }
+ /* Home section */
+ 
+ .home-section {
+     padding: 250px 0 200px;
+     color: #ffffff;
+     position: relative;
+     z-index: 1;
+     overflow: hidden;
+ }
+ 
+ .home-section::before {
+     content: '';
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     height: 112px;
+     background-image: url("../img/shape-bg.png");
+     background-size: cover;
+     background-position: bottom;
+     background-repeat: no-repeat;
+     z-index: -1;
+ }
+ 
+ .home-section .home-content h1 {
+     font-size: 55px;
+     font-weight: 700;
+     line-height: 60px;
+     margin: 0;
+ }
+ 
+ .home-section .home-content p {
+     font-size: 18px;
+     line-height: 28px;
+     margin: 20px 0 30px 0;
+ }
+ 
+ .home-section .home-img img {
+     max-width: 400px;
+     width: 100%;
+     position: absolute;
+     left: 150px;
+     top: -50px;
+     animation: watch-01 5s linear infinite;
+ }
+ 
+ @keyframes watch-01 {
+     0%,
+     100% {
+         transform: translateY(15px);
+     }
+     50% {
+         transform: translateY(-15px);
+     }
+ }
+ 
+ .home-img-downshape {
+     margin-top: 10%;
+ }
